@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AP Score</title>
+        <link rel="stylesheet" type="text/css" href="styleSheet.css">
+        <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['corechart']}]}"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    </head>
+
+    <body>
+        <div id="top">
+            <h1 style="color:black; font-family: courier new; font-size:50px"><u>AP Test Statistics 2015</u></h1>
+            <div id="navContainer">
+                <div id="tabGreen" class="navButtons" style="background-color: lightgreen; border-color:#328b6c;"><a href="scores.html"><b>Scores</b></a></div>
+                <div id="tabBlue" class="navButtons" onmouseover="tabHover('blue')" onmouseout="tabOut('blue')" style="background-color: deepskyblue; border-color: transparent;"><a href="participants.html">Participants</a></div>
+                <div id="tabRed" class="navButtons" onmouseover="tabHover('red')" onmouseout="tabOut('red')" style="background-color: #ff7978; border-color:transparent;"><a href="index.html">Home</a></div>
+            </div>
+        </div>
+        <br>
+
+        <div id="main">
+            <h1>Calculus AB and BC</h1>
+            <p>3 students worldwide earned every point possible, 108/108, on the 2015 AP Calculus AB exam. 1 student, out of 120,000 worldwide who took AP Calc BC this year, earned every point possible, 108/108.</p>
+            <table>
+                <tr>
+                    <td>
+                        <div id="calcABChart" style="width: 450px; height: 250px;"></div>
+                    </td>
+                    <td>
+                        <div id="calcBCChart" style="width: 450px; height: 250px;"></div>
+                    </td>
+                </tr>
+            </table>
+
+            <h1>World and U.S. History</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="worldHistoryChart" style="width: 450px; height: 250px;"></div>
+                    </td>
+                    <td>
+                        <div id="usHistoryChart" style="width: 450px; height: 250px;"></div>
+                    </td>
+                </tr>
+            </table>
+
+            <h1>Physics I and II</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="physics1Chart" style="width: 450px; height: 250px;"></div>
+                    </td>
+                    <td>
+                        <div id="physics2Chart" style="width: 450px; height: 250px;"></div>
+                    </td>
+                </tr>
+            </table>
+
+            <h1>Chemistry and Biology</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="chemistryChart" style="width: 450px; height: 250px;"></div>
+                    </td>
+                    <td>
+                        <div id="biologyChart" style="width: 450px; height: 250px;"></div>
+                    </td>
+                </tr>
+            </table>
+
+            <h1>Computer Science A</h1>
+            <div align="center">
+                <div id="csChart" style="width: 450px; height: 250px;"></div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="scripts.js"></script>
+
+    </body>
+</html>

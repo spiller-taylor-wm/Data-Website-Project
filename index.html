@@ -1,33 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <title></title>
-        <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['corechart']}]}"></script>
+        <title>AP Scores</title>
         <link rel="stylesheet" type="text/css" href="styleSheet.css">
+
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     </head>
+
     <body>
-        <div id="header">
-            <h1>Header</h1>
+        <div id="top">
+            <h1 style="color:black; font-family: courier new; font-size:50px"><u>AP Test Statistics 2015</u></h1>
+            <div id="navContainer">
+                <div id="tabGreen" class="navButtons" onmouseover="tabHover('green')" onmouseout="tabOut('green')" style="background-color: lightgreen; border-color: transparent;"><a href="scores.html">Scores</a></div>
+                <div id="tabBlue" class="navButtons" onmouseover="tabHover('blue')" onmouseout="tabOut('blue')" style="background-color: deepskyblue; border-color: transparent;"><a href="participants.html">Participants</a></div>
+                <div id="tabRed" class="navButtons" style="background-color: #ff7978; border-color:#8b2323;"><a href="index.html"><b>Home</b></a></div>
+            </div>
         </div>
 
+        <br>
         <div id="main">
-            <div id="navBox">
-                <ul class="noDecor">
-                    <li>Home</li>
-                    <li>Stats</li>
-                    <li>Why</li>
-                </ul>
+            <h1>The Wait is Over</h1>
+            <div align="center">
+                <img src="http://www.adroitacademics.com/wp-content/header-images/banner4.jpg" width="95%" height="90%"/>
             </div>
-            <div id="content">
-                <p>Text</p>
-                <div id="piechart" style="width: 900px; height: 500px;"></div>
-            </div>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A whole year of learning, many weeks of review, countless hours of review, and a whole lot of stress went into the 2015 AP tests this spring. Finally when the instructor called out and collected the test books, students were temporarily relieved. However, the anxiety of anticipating their grade only just began.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In mid July the scores were finally posted online for eager students to review. Some dreams were realized, while others died a tragic death. Now the feelings of that day are only a distant memory or a faint scar on students' lives. These real moments and emotions experienced students cannot be displayed by this data, but they deserve to be remembered.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is dedicated to the students who achieved their dreams and cried from joy, to those who cried for hours and didn't speak to anyone, to those who were just too tired to care, and to anyone in between. One test does not define an entire person. </p>
+            <img src="http://www.bodybiz.nl/wp-content/uploads/2013/06/5redenenen.jpg" width="95%" height="90%"/>
+            <p>Sources: (<a href="http://www.totalregistration.net/AP-Exam-Registration-Service/2015-AP-Exam-Score-Distributions.php">x</a>) (<a href="https://secure-media.collegeboard.org/digitalServices/pdf/research/2015/Program-Summary-Report-2015.pdf">x</a>)</p>
         </div>
         <script type="text/javascript" src="scripts.js"></script>
     </body>
 </html>
-
-<!-- Bar chart for hate crimes
-<div id="piechart" style="width: 900px; height: 500px;"></div>
---->
